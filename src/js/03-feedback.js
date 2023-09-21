@@ -21,9 +21,9 @@ function onFeedbackFormInput(evt) {
 function populateForm() {
     const saveData = JSON.parse(localStorage.getItem(STORAGE_KEY))
     if(saveData) {
-        const { email,message } = refs.feedbackForm.elements
-        email.value = saveData.email ?? ""
-        message.value = saveData.message ?? ""
+        const { email, message } = refs.feedbackForm.elements;
+        email.value = saveData.email ?? "";
+        message.value = saveData.message ?? "";
     }
 }
 
